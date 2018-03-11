@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "target": "es5",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "lib": [
+            "es2017",
+            "dom"
+        ],
+        "noImplicitAny": false,
+        "suppressImplicitAnyIndexErrors": true,
+        "paths": {
+            "@angular/*": ["node_modules/@angular/*"],
+            "rxjs/*": ["node_modules/rxjs/*"]
+        }
+    },
+    "files": [
+        "app/ngx"
+    ],
+    "include": [
+        "typings/typings.d.ts"
+    ]
+}
