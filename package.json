@@ -20,7 +20,7 @@
   },
   "scripts": {
     "postinstall": "bower install",
-    "start": "http-server ./app -a localhost -p 8000 -c-1"
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server --env.dev --progress --inline --port 8000 --open"
   },
   "dependencies": {
     "@angular/common": "~5.1.0",

@@ -8,3 +8,14 @@ angular.module('phonecatApp', [
   'phoneDetail',
   'phoneList'
 ]);
+
+angular.module("ng1-app",
+    [
+        "phonecatApp",
+        "ngx-hybrid-helper"
+    ]);
+
+angular.module("phonecatApp")
+    .component("ng1AppRoot", {
+        template: '<div ng-view class="view-frame"></div>'
+    });
